@@ -1,12 +1,8 @@
-/* eslint-disable  @typescript-eslint/no-unused-vars */
-
-// import { useUserStore } from '~~/stores/User'
 
 // Custom Auth Fetch Composable
 export const useAuthLazyFetch = (request: any, options: any | undefined | null) => {
     // Get Token from store or local storage
-    // let token = useUserStore().token
-    // if (!token) token = useCookie('token').value || ''
+
 
     // Use the useFetch hook to make a request with some additional options
     return useLazyFetch(request, {
@@ -14,7 +10,7 @@ export const useAuthLazyFetch = (request: any, options: any | undefined | null) 
         onRequest({ request, options }) {
             // Set the request headers
             options.headers = {
-                Authorization: `Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1IjoiZTk3YTIxZjM4ZDc4NDgwYjlhYjdhOTI0M2Q0NjViNzgiLCJkIjoiMTY4MDA5NyIsInIiOiJzYSIsInAiOiJmcmVlIiwiYSI6ImZpbmRlci5pbyIsImwiOiJ1czEiLCJleHAiOjE2ODMyODc4Mjd9.qFyxIJYJLihyxfui4QRMOLjJgwBr95z3N3lWRDz89ZU`,
+                Authorization: `Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1IjoiM2QwMjI0MjY1MDBmNDA1Njk1OWMwY2M1Nzk4Mzg0NjgiLCJkIjoiMTY4MDA2OCIsInIiOiJzYSIsInAiOiJmcmVlIiwiYSI6ImZpbmRlci5pbyIsImwiOiJ1czEiLCJleHAiOjE2ODMyNzEyMzd9.lMm7qCLU343-fMBeaOSy-LYa37vVUPmF3ncRpw3XOg4 `,
             }
         },
 
