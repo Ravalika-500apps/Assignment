@@ -1,6 +1,7 @@
 <template>
   <div>
     <!-- <NuxtWelcome /> -->
-    <CollectionMain></CollectionMain>
+    <!-- <CollectionMain1></CollectionMain1> -->
+    <BuilderMainBuilder></BuilderMainBuilder>
   </div>
 </template>
