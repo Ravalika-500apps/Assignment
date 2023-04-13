@@ -3,6 +3,7 @@
     <!-- <NuxtWelcome /> -->
     <!-- <CollectionMain1></CollectionMain1> -->
     <!-- <BuilderMainBuilder></BuilderMainBuilder> -->
-   <PagesMainPage></PagesMainPage>
+  
+   <FeaturesHomePage></FeaturesHomePage>
   </div>
 </template>
